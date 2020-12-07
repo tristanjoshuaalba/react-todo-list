@@ -3,7 +3,7 @@ import './App.css';
 function App(props) {
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>Todo List</h1>
       <form>
         <h2 className="label-wrapper">
           <label htmlFor="new-todo-input" className="label__lg">
@@ -71,8 +71,8 @@ function App(props) {
 
         <li className="todo stack-small">
           <div className="c-cb">
-            <input id="todo-0" type="checkbox" defaultChecked={true}/>
-            <label className="todo-label" htmlFor="todo-0">
+            <input id="todo-1" type="checkbox"/>
+            <label className="todo-label" htmlFor="todo-1">
               Sleep
             </label>
           </div>
@@ -89,8 +89,8 @@ function App(props) {
 
         <li className="todo stack-small">
           <div className="c-cb">
-            <input id="todo-0" type="checkbox" defaultChecked={true}/>
-            <label className="todo-label" htmlFor="todo-0">
+            <input id="todo-2" type="checkbox"/>
+            <label className="todo-label" htmlFor="todo-2">
               Repeat
             </label>
           </div>
