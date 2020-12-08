@@ -91,7 +91,10 @@ ToDo List Items
     </li>
     </ul>
 
-``
+````
+
+After styling, the app should look like this:
+
 
 ## Useful references:
 [React Todo List - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
