@@ -1,28 +1,36 @@
 import React from "react";
 
-const Todo = ({name,completed,id}) => {
-    return(
-        <div>
-            <li className="todo stack-small">
-                <div className="c-cb">
-                <input id={id} type="checkbox" checked={completed}/>
-                <label className="todo-label" htmlFor="todo-0">
-                    {name}
-                </label>
-            </div>
+export default function Todo(props) {
+    return ( <
+        li className = "todo stack-small" >
+        <
+        div className = "c-cb" >
+        <
+        input id = { props.id }
+        type = "checkbox"
+        defaultChecked = { props.completed }
+        onChange = {
+            () => props.toggleTaskCompleted(props.id) }
+        />
 
-            <div className="btn-group">
-                <button type="button" className="btn">
-                    Edit <span className="visually-hidden">{name}</span>
-                </button>
-                <button type="button" className="btn btn__danger">
-                    Delete <span className="visually-hidden">{name}</span>
-                </button>
-            </div>
-            </li>
-    
-        </div>
-    )
+        <
+        label className = "todo-label"
+        htmlFor = "todo-0" > { props.name } <
+        /label> <
+        button type = "button"
+        className = "btn btn__danger"
+        onClick = {
+            () => props.deleteTask(props.id) }
+        style = {
+            { "margin-left": 10 } } >
+        X <
+        span className = "visually-hidden" > { props.name } < /span> <
+        /button> <
+        /div>
+
+
+
+        <
+        /li>
+    );
 }
-
-export default Todo;
